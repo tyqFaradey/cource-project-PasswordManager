@@ -1,0 +1,30 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- ====================== -->
+    <!--   DARK THEME PALETTE   -->
+    <!-- ====================== -->
+
+    <!-- Primary accent colors -->
+    <SolidColorBrush x:Key="PrimaryColor" Color="#4A90E2"/>
+    <SolidColorBrush x:Key="PrimaryDarkColor" Color="#3973B8"/>
+    <SolidColorBrush x:Key="SecondaryColor" Color="#7B61FF"/>
+    <SolidColorBrush x:Key="AccentColor" Color="#50E3C2"/>
+    <SolidColorBrush x:Key="ErrorColor" Color="#FF5F56"/>
+    <SolidColorBrush x:Key="WarningColor" Color="#FFA726"/>
+
+    <!-- Background shades -->
+    <SolidColorBrush x:Key="BackgroundColor" Color="#121212"/>
+    <SolidColorBrush x:Key="BackgroundSecondaryColor" Color="#1A1A1A"/>
+    <SolidColorBrush x:Key="SurfaceColor" Color="#1E1E1E"/>
+    <SolidColorBrush x:Key="SurfaceAltColor" Color="#242424"/>
+    <SolidColorBrush x:Key="CardColor" Color="#2C2C2C"/>
+    <SolidColorBrush x:Key="BorderColor" Color="#333333"/>
+
+    <!-- Text colors -->
+    <SolidColorBrush x:Key="TextPrimaryColor" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="TextSecondaryColor" Color="#B3B3B3"/>
+    <SolidColorBrush x:Key="TextDisabledColor" Color="#666666"/>
+    <SolidColorBrush x:Key="TextAccentColor" Color="#4A90E2"/>
+    
+</ResourceDictionary>
