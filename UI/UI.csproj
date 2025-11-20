@@ -19,6 +19,18 @@
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
       </Page>
+      <Page Update="Views\EntryItemView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <DependentUpon>EntryListView.xaml</DependentUpon>
+      </Page>
+      <Page Update="Views\FiltersView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <DependentUpon>EntryListView.xaml</DependentUpon>
+      </Page>
+      <Page Update="Views\EntryListView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <DependentUpon>MainPage.xaml</DependentUpon>
+      </Page>
     </ItemGroup>
 
     <ItemGroup>
