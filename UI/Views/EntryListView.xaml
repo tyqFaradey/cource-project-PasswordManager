@@ -1,0 +1,33 @@
+<UserControl x:Class="UI.Views.EntryListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:utils="clr-namespace:UI.Utilities"
+             xmlns:vm="clr-namespace:Models;assembly=Models"
+             xmlns:local="clr-namespace:UI.Views">
+    
+    <UserControl.DataContext>
+        <vm:EntryListViewModel/>
+    </UserControl.DataContext>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <ContentControl Grid.Row="0">
+            <local:FiltersView DataContext="{Binding FilterVm}"/>
+        </ContentControl>
+        
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch">
+            <ItemsControl ItemsSource="{Binding Entries}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <local:EntryItemView/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        
+    </Grid>
+</UserControl>
